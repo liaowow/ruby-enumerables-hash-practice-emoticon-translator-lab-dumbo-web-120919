@@ -20,7 +20,7 @@ def get_japanese_emoticon(file, emo)
   new_hash = load_library(file)
   
   if new_hash["get_emoticon"][emo]
-    new_hash["get_emoticon"][emo]
+    return new_hash["get_emoticon"][emo]
   else
     return 
   end
