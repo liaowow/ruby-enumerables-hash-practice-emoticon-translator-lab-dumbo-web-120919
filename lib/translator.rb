@@ -17,9 +17,13 @@ def load_library(file)
 end
 
 def get_japanese_emoticon(file, emo)
-  db = load_library(file)
+  new_hash = load_library(file)
   
-  
+  if new_hash["get_emoticon"][emo]
+    new_hash["get_emoticon"][emo]
+  else
+    return 
+  end
   
 end
 
