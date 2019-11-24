@@ -7,8 +7,10 @@ def load_library(file)
   new_hash = Hash.new {|k, v| k[v] = {}}
 
   emoticons.each do |meaning, emoticon|
-    new_hash["get_meaning"][emoticon] = meaning
-    new_hash["get_emoticon"][meaning] = emoticon
+    emoticon.each do |arr_element|
+      new_hash["get_meaning"][arr_element] = meaning
+      new_hash["get_emoticon"][meaning] = arr_element
+    end
   end
 
   new_hash
