@@ -22,7 +22,7 @@ def get_japanese_emoticon(file, emo)
   if new_hash["get_emoticon"][emo]
     return new_hash["get_emoticon"][emo]
   else
-    return 
+    return "Sorry, that emoticon was not found"
   end
   
 end
