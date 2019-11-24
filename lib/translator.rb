@@ -16,9 +16,9 @@
 #   new_hash
 # end
 
-def load_library(file)
+def load_library(file_path)
   require "yaml"
-  library = YAML.load_file(file)
+  library = YAML.load_file(file_path)
 
   final = {
     "get_meaning": {},
